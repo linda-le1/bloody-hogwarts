@@ -1,0 +1,10 @@
+<h1> Hogwarts Student List </h1>
+
+<h2> Average Age:<%= student.count_average_age %> </h2>
+<% @students.each do |student| %>
+<div>
+  <p> Name: <%= student.name %></p>
+  <p> Age: <%= student.age %></p>
+  <p> House: <%= student.house %></p>
+</div>
+<% end %>
